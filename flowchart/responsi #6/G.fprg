@@ -1,0 +1,48 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="2.11">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="ichwannur"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2020-04-24 01:44:32 AM"/>
+        <attribute name="created" value="aWNod2FubnVyO0RFU0tUT1AtNDhLVTJSNDsyMDIwLTA0LTIzOzEwOjIxOjI2IFBNOzMyNzk="/>
+        <attribute name="edited" value="aWNod2FubnVyO0RFU0tUT1AtNDhLVTJSNDsyMDIwLTA0LTI0OzAxOjQxOjMyIEFNOzE7aWNod2FubnVyO0RFU0tUT1AtNDhLVTJSNDsyMDIwLTA0LTIzOzEwOjIxOjI2IFBNO0QuZnByZzs3MzE0"/>
+        <attribute name="edited" value="aWNod2FubnVyO0RFU0tUT1AtNDhLVTJSNDsyMDIwLTA0LTI0OzAxOjQ0OjMyIEFNOzY7MzM4MA=="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="array" type="Integer" array="True" size="13"/>
+            <assign variable="array[0]" expression="83"/>
+            <assign variable="array[1]" expression="12"/>
+            <assign variable="array[2]" expression="41"/>
+            <assign variable="array[3]" expression="38"/>
+            <assign variable="array[4]" expression="19"/>
+            <assign variable="array[5]" expression="26"/>
+            <assign variable="array[6]" expression="9"/>
+            <assign variable="array[7]" expression="48"/>
+            <assign variable="array[8]" expression="20"/>
+            <assign variable="array[9]" expression="55"/>
+            <assign variable="array[10]" expression="8"/>
+            <assign variable="array[11]" expression="32"/>
+            <assign variable="array[12]" expression="3"/>
+            <declare name="i" type="Integer" array="False" size=""/>
+            <output expression="&quot;Data dalam array&quot;" newline="True"/>
+            <for variable="i" start="0" end="12" direction="inc" step="1">
+                <output expression="array[i]" newline="False"/>
+                <output expression="&quot;; &quot;" newline="False"/>
+            </for>
+            <output expression="&quot;; &quot;" newline="True"/>
+            <output expression="&quot;Bilangan Kelipatan Lima Yaitu:&quot;" newline="True"/>
+            <for variable="i" start="0" end="12" direction="inc" step="1">
+                <if expression="array[i]%5==0">
+                    <then>
+                        <output expression="array[i]" newline="False"/>
+                        <output expression="&quot;; &quot;" newline="False"/>
+                    </then>
+                    <else/>
+                </if>
+            </for>
+        </body>
+    </function>
+</flowgorithm>
